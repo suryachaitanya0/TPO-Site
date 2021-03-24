@@ -2648,7 +2648,7 @@ input, select, textarea {
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 15em, 15em, auto,cover;
 		color: #fff;
-		padding: 5em;
+		padding: 1em;
 		text-align: center;
 	}
 
