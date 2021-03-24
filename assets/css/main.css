@@ -115,7 +115,15 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
-
+#none {
+		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		color: #9ACD32;
+		text-decoration: none;
+		border-bottom: none;
+	}
 		a:hover {
 			border-bottom-color: transparent;
 		}
@@ -2385,6 +2393,7 @@ input, select, textarea {
 							font-style: normal;
 							font-variant: normal;
 							text-rendering: auto;
+							text
 							line-height: 1;
 							text-transform: none !important;
 							font-family: 'Font Awesome 5 Free';
@@ -2637,14 +2646,14 @@ input, select, textarea {
 		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 15em, 15em, auto, cover;
+		background-size: 15em, 15em, auto,cover;
 		color: #fff;
 		padding: 5em;
 		text-align: center;
 	}
 
 		#cta header {
-			margin-bottom: 2em;
+			
 		}
 
 /* Footer */
@@ -2831,7 +2840,7 @@ input, select, textarea {
 
 			#cta {
 				background-size: 15em, 15em, auto, cover;
-				padding: 3em;
+				padding: 1em;
 
 			}
 
@@ -3316,7 +3325,7 @@ input, select, textarea {
 
 			#cta {
 				background-size: 10em, 10em, auto, cover;
-				padding: 3em 1.5em;
+				padding: 1em 1em;
 			}
 
 		/* Footer */
@@ -3381,14 +3390,4 @@ input, select, textarea {
 	width: 100%;
 	 margin:3.5%;
 	text-align: center;
-}
-
-#none {
-	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	color: #9ACD32;
-	text-decoration: none;
-	border-bottom: none;
 }
