@@ -2637,7 +2637,7 @@ input, select, textarea {
 		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-size: 15em, 15em, auto, cover;
 		color: #fff;
 		padding: 5em;
 		text-align: center;
@@ -2749,7 +2749,7 @@ input, select, textarea {
 		/* CTA */
 
 			#cta {
-				padding: 4em;
+				padding: 1em;
 				background-attachment: scroll;
 			}
 
@@ -3381,4 +3381,14 @@ input, select, textarea {
 	width: 100%;
 	 margin:3.5%;
 	text-align: center;
+}
+
+#none {
+	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	color: #9ACD32;
+	text-decoration: none;
+	border-bottom: none;
 }
