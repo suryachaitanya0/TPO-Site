@@ -2652,8 +2652,8 @@ input, select, textarea {
 		text-align: center;
 	}
 
-		#cta header {
-			
+		#cta header marquee {
+			color: whitesmoke;
 		}
 
 /* Footer */

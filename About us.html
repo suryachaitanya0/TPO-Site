@@ -1,48 +1,53 @@
 <!DOCTYPE HTML>
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>About us</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
 		<script>
-				var topLogo = document.querySelector("#topLogoDiv h1");
-				var nav = document.querySelector("#nav");
-				$(document).ready(function(){
-					$(window).scroll(function(){
-						var scrollTop = 520;
-						if($(window).scrollTop() >= scrollTop){
-							topLogo.style.display = "none";
-							nav.style.top = "0.8em !important";
-						}
-						if($(window).scrollTop() < scrollTop){
-							topLogo.style.display = "block";
-							nav.style.top = "4em !important";
-						}
-					})
-				})
-			</script>
+			window.addEventListener('scroll', function(e) {
 
+				if ( window.scrollY < 100){
+					document.getElementById('topLogoDiv').style.display = "block";
+					document.getElementById('header').style.height = "16%";
+					document.getElementById('nav').style.margin = "3.5%";
+				}
+				else{
+					document.getElementById('topLogoDiv').style.display = "none"; 
+					document.getElementById('header').style.height = "7%";
+					document.getElementById('nav').style.margin = "auto";
+				}
+			});
+
+			window.onscroll = function() {myFunction()};
+
+		</script>
+
+				
 	</head>
-	<body class="left-sidebar is-preload">
-		<div id="page-wrapper">
 
-			<!-- Header -->
+	<body class="index is-preload">
+
+		<div id="page-wrapper">
 				<!-- Header -->
-				<header id="header" class="">
+
+				<header id="header">
+
 					<div id = "topLogoDiv">
 						<h1 id = "logoText">
 							Telangana Training & Placement Officers Consortium
-						</h1>
+						</h1><br>
 					</div>
 
-					
 					<nav id="nav">
 						<ul>
 							<li class="current" id="logo"><a href="index.html">TPO</a></li>
@@ -74,7 +79,7 @@
 								</ul>
 							</li>
 							<li class="current"><a href=" ">Membership</a></li>
-							<li class="current"><a href=" ">Meetings</a></li>
+							<li class="current"><a href="meetings.html">Meetings</a></li>
 							<li class="current"><a href=" ">Gallery</a></li>
 							<li class="current"><a href=" ">contact</a></li>
 							<li class="current"><a href=" ">enquiry</a></li>

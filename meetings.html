@@ -5,24 +5,52 @@
 		<title>Meeting</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="right-sidebar is-preload">
-		<div id="page-wrapper">
+		
+		<script>
+			window.addEventListener('scroll', function(e) {
 
-			<!-- Header -->
-				<header id="header" class="">
+				if ( window.scrollY < 100){
+					document.getElementById('topLogoDiv').style.display = "block";
+					document.getElementById('header').style.height = "16%";
+					document.getElementById('nav').style.margin = "3.5%";
+				}
+				else{
+					document.getElementById('topLogoDiv').style.display = "none"; 
+					document.getElementById('header').style.height = "7%";
+					document.getElementById('nav').style.margin = "auto";
+				}
+			});
+
+			window.onscroll = function() {myFunction()};
+
+		</script>
+
+				
+	</head>
+
+	<body class="index is-preload">
+
+		<div id="page-wrapper">
+				<!-- Header -->
+
+				<header id="header">
+
 					<div id = "topLogoDiv">
 						<h1 id = "logoText">
 							Telangana Training & Placement Officers Consortium
-						</h1>
+						</h1><br>
 					</div>
 
-					
 					<nav id="nav">
 						<ul>
-							<li class="current" id="logo"><a href="index (1).html">TPO</a></li>
+							<li class="current" id="logo"><a href="index.html">TPO</a></li>
 							<li class="current"><a href="About us.html">Aboutus</a></li>
 							<li class="submenu">
 								<a href="#">Activities</a>
@@ -51,7 +79,7 @@
 								</ul>
 							</li>
 							<li class="current"><a href=" ">Membership</a></li>
-							<li class="current"><a href=" ">Meetings</a></li>
+							<li class="current"><a href="meetings.html">Meetings</a></li>
 							<li class="current"><a href=" ">Gallery</a></li>
 							<li class="current"><a href=" ">contact</a></li>
 							<li class="current"><a href=" ">enquiry</a></li>

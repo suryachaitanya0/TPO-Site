@@ -1,46 +1,88 @@
 <!DOCTYPE HTML>
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Contact - Twenty by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="contact is-preload">
-		<div id="page-wrapper">
 
-			<!-- Header -->
+		<script>
+			window.addEventListener('scroll', function(e) {
+
+				if ( window.scrollY < 100){
+					document.getElementById('topLogoDiv').style.display = "block";
+					document.getElementById('header').style.height = "16%";
+					document.getElementById('nav').style.margin = "3.5%";
+				}
+				else{
+					document.getElementById('topLogoDiv').style.display = "none"; 
+					document.getElementById('header').style.height = "7%";
+					document.getElementById('nav').style.margin = "auto";
+				}
+			});
+
+			window.onscroll = function() {myFunction()};
+
+		</script>
+
+				
+	</head>
+
+	<body class="index is-preload">
+
+		<div id="page-wrapper">
+				<!-- Header -->
+
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Twenty <span>by HTML5 UP</span></a></h1>
+
+					<div id = "topLogoDiv">
+						<h1 id = "logoText">
+							Telangana Training & Placement Officers Consortium
+						</h1><br>
+					</div>
+
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="index.html">Welcome</a></li>
+							<li class="current" id="logo"><a href="index.html">TPO</a></li>
+							<li class="current"><a href="About us.html">Aboutus</a></li>
 							<li class="submenu">
-								<a href="#">Layouts</a>
+								<a href="#">Activities</a>
 								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li><a href="contact.html">Contact</a></li>
+									<li><a href=" ">TPO's capacity developnment</a></li>
 									<li class="submenu">
-										<a href="#">Submenu</a>
+										<a href="#">Annual contests for student of ap</a>
 										<ul>
-											<li><a href="#">Dolore Sed</a></li>
-											<li><a href="#">Consequat</a></li>
-											<li><a href="#">Lorem Magna</a></li>
-											<li><a href="#">Sed Magna</a></li>
-											<li><a href="#">Ipsum Nisl</a></li>
+											<li><a href="#">Ap code championship</a></li>
+											<li><a href="#">ap aptitude championship</a></li>
+											<li><a href="#">Ap innivation championship</a></li>
 										</ul>
 									</li>
+									<li><a href=" ">Pannel discussions</a></li>
+									<li><a href=" ">industry connect activities</a></li>
+									<li><a href=" ">running campaigns</a></li>
+									<li><a href=" ">Pooled placement events</a></li>
+									
 								</ul>
 							</li>
-							<li><a href="#" class="button primary">Sign Up</a></li>
+							<li class="submenu">
+								<a href="#">Committee</a>
+								<ul>
+									<li><a href=" ">Governing body</a></li>
+									<li><a href=" "> MOA </a></li>									
+								</ul>
+							</li>
+							<li class="current"><a href=" ">Membership</a></li>
+							<li class="current"><a href="meetings.html">Meetings</a></li>
+							<li class="current"><a href=" ">Gallery</a></li>
+							<li class="current"><a href=" ">contact</a></li>
+							<li class="current"><a href=" ">enquiry</a></li>
 						</ul>
 					</nav>
 				</header>
